@@ -1,0 +1,29 @@
+// ----------------------------------------
+// COLORS
+// ----------------------------------------
+
+// Brand
+$color-brand:                 $brand-color;
+$color-brand-dark:            darken($brand-color, 5%);
+$color-brand-light:           lighten($brand-color, 5%);
+$color-brand-secondary-dark:  darken($brand-color-secondary, 5%);
+$color-brand-secondary:       $brand-color-secondary;
+$color-brand-secondary-light: lighten($brand-color-secondary, 5%);
+
+// Utility
+$color-error:                 #ff4136;
+$color-error-dark:            darken($color-error, 20%);
+$color-error-light:           lighten($color-error, 20%);
+$color-warning:               #ff851b;
+$color-warning-dark:          darken($color-warning, 10%);
+$color-warning-light:         lighten($color-warning, 20%);
+$color-highlight:             #ffdc00;
+$color-success:               #2ecc40;
+$color-success-dark:          darken($color-success, 5%);
+$color-success-light:         lighten($color-success, 20%);
+$color-information:           #0074d9;
+$color-information-dark:      darken($color-information, 5%);
+$color-information-light:     lighten($color-information, 20%);
+
+$body-bg:                     white;
+$body-color:                  #333;
