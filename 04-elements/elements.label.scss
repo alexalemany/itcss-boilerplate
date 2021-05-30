@@ -1,11 +1,8 @@
 // ----------------------------------------
-// TYPE
+// LABEL
 // ----------------------------------------
 
-
-p {
-    margin-bottom: 1rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
 }

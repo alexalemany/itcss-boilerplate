@@ -1,0 +1,13 @@
+// ----------------------------------------
+// BUTTONS
+// ----------------------------------------
+
+.c-btn {
+    // $background-color, $border-radius, $color, $font-weight, $padding
+    @include button(linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%));
+}
+
+.c-btn-a {
+    // $background-color, $border-radius, $color, $font-weight, $padding
+    @include button(linear-gradient(to right, #09a061 0%, #fda085 51%, #f6d365 100%));
+}

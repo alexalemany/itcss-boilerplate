@@ -1,0 +1,40 @@
+// ----------------------------------------
+// CARD
+// ----------------------------------------
+
+@mixin card($border-radius: 12px, $image-position: top, $image-height: 100%) {
+    display: flex;
+    border-radius: $border-radius;
+    box-shadow: $base-box-shadow;
+    overflow: hidden;
+
+    @if $image-position == top {
+        flex-direction: column-reverse;
+    }
+
+    @if $image-position == bottom {
+        flex-direction: column;
+    }
+
+    @if $image-position == left {
+        flex-direction: row-reverse;
+    }
+
+    @if $image-position == right {
+        flex-direction: row;
+    }
+
+    &--content {
+        padding: 20px;
+    }
+
+    img {
+        @if $image-height != 100% {
+            height: $image-height;
+            object-fit: cover;
+        }
+    }
+
+   
+    // padding: 10px;
+}

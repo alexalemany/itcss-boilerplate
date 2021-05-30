@@ -4,7 +4,7 @@
 
 // Brand
 $color-brand:                 $brand-color;
-$color-brand-dark:            darken($brand-color, 5%);
+$color-brand-dark:            darken($brand-color, 10%);
 $color-brand-light:           lighten($brand-color, 5%);
 $color-brand-secondary-dark:  darken($brand-color-secondary, 5%);
 $color-brand-secondary:       $brand-color-secondary;
@@ -26,6 +26,7 @@ $color-information-dark:      darken($color-information, 5%);
 $color-information-light:     lighten($color-information, 20%);
 
 $link-color:                  $brand-color;
+$button-color:                #333;
 
 $body-bg:                     white;
 $body-color:                  #333;

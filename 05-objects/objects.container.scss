@@ -1,0 +1,32 @@
+// ----------------------------------------
+// CONTAINER
+// ----------------------------------------
+
+.o-container{
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: auto;
+
+    @media (min-width: $bp-sm) {
+        width: $cnt-sm;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media (min-width: $bp-md) {
+        width: $cnt-md;
+    }
+
+    @media (min-width: $bp-lg) {
+        width: $cnt-lg;
+    }
+
+    @media (min-width: $bp-xl) {
+        width: $cnt-xl;
+    }
+
+    @media (min-width: $bp-xxl) {
+        width: $cnt-xxl;
+    }
+}

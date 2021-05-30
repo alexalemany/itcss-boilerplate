@@ -1,0 +1,38 @@
+// ----------------------------------------
+// BUTTONS
+// ----------------------------------------
+
+
+@mixin button($background-color: $color-brand, $border-radius:$base-border-radius, $color: $button-color, $font-weight: $weight-bold, $padding: $y-padding $x-padding) {
+    display: block;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: $background-color;
+    // border: $base-border-width-small solid $color-brand-secondary-light;
+    border: 0;
+    border-radius: $border-radius;
+    color: $color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: $font-weight;
+    line-height: $base-line-height;
+    margin: 0;
+    padding: $padding;
+    text-align: center;
+    text-decoration: none;
+    transition: background-position 0.25s, box-shadow 0.25s, transform 0.25s;
+    vertical-align: middle;
+    white-space: nowrap;
+  
+    &:focus,
+    &:hover {
+        // background-image: darken($background-color, 10%);;
+        background-position: right center;
+        // opacity: .6;
+        box-shadow: $base-box-shadow;
+        color: $button-color;
+        outline: 0;
+    }
+}

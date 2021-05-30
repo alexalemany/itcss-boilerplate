@@ -5,8 +5,8 @@
 // BRAND ----------------------------------
 
 // Color
-$brand-color:                    #0074d9;
-$brand-color-secondary:          #001f3f;
+$brand-color:                    #1ACDC2;
+$brand-color-secondary:          #FF00E5;
 
 // Font
 $brand-font:                     -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -16,7 +16,7 @@ $brand-font-secondary:           Georgia, serif;
 
 // Color
 $base-font-size:                 1rem;
-$base-line-height:               1.5;
+$base-line-height:               1.2;
 
 // Border
 $base-border-width:              0.125em;
@@ -32,3 +32,7 @@ $base-box-shadow-highlight:      0 0 0.5em rgba(0, 169, 151, 0.25);
 $grid-columns:                12 !default;
 $grid-gutter-width:           1.5rem !default;
 $grid-row-columns:            6 !default;
+
+// Padding buttons
+$y-padding:                   12px;
+$x-padding:                   12px;

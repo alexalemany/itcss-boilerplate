@@ -1,0 +1,15 @@
+// CLASSES
+.u-flex-grid {
+    @include grid-base();
+}
+
+.u-flex-col {
+    @include col-props(6, 12, 15px);
+//   @include columns-loop(desk, $grid-desktop-columns, $desk-gutter);
+//   @media screen and (max-width: $bp-md) {
+//     @include columns-loop(tab, $grid-tablet-columns, $tab-gutter);
+//   }
+//   @media screen and (max-width: $bp-sm) {
+//     @include columns-loop(mob, $grid-mobile-columns, $mob-gutter);
+//   }
+}
