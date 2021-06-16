@@ -2,7 +2,7 @@
 // CARD
 // ----------------------------------------
 
-@mixin card($border-radius: 12px, $image-position: top, $image-height: 100%) {
+@mixin card($border-radius: $border-radius-card, $image-position: top, $image-height: 100%) {
     display: flex;
     border-radius: $border-radius;
     box-shadow: $base-box-shadow;

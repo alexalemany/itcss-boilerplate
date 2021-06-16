@@ -3,7 +3,7 @@
 // ----------------------------------------
 
 
-@mixin button($background-color: $color-brand, $border-radius:$base-border-radius, $color: $button-color, $font-weight: $weight-bold, $padding: $y-padding $x-padding) {
+@mixin button($background-color: $color-brand, $border-radius:$border-radius-button, $color: $button-color, $font-weight: $weight-bold, $padding: $y-padding $x-padding) {
     display: block;
     transition: 0.5s;
     background-size: 200% auto;
