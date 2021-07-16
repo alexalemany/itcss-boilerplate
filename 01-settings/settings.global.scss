@@ -9,6 +9,7 @@ $brand-color:                    #1ACDC2;
 $brand-color-secondary:          #FF00E5;
 
 // Font
+$font-size-base:                 16px;
 $brand-font:                     -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 $brand-font-secondary:           Georgia, serif;
 
@@ -24,6 +25,7 @@ $border-radius-button: 0.125em * 1.5;
 
 // Shadows
 $base-box-shadow:                0 0 1em rgba(34, 34, 34, 0.125);
+
 $base-box-shadow-inset:          0 0 0.25em rgba(34, 34, 34, 0.125) inset;
 $base-box-shadow-error:          0 0 0.5em rgba(255, 65, 54, 0.25);
 $base-box-shadow-highlight:      0 0 0.5em rgba(0, 169, 151, 0.25);

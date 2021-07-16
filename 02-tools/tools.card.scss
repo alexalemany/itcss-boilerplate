@@ -2,14 +2,34 @@
 // CARD
 // ----------------------------------------
 
-@mixin card($border-radius: $border-radius-card, $image-position: top, $image-height: 100%) {
+@mixin card($border-radius: $border-radius-card, $image-position: bottom, $image-height: 100%, $image-width: 25%) {
     display: flex;
     border-radius: $border-radius;
     box-shadow: $base-box-shadow;
     overflow: hidden;
+    position: relative;
+
+    .c-card__content {
+        width: 100%;
+    }
+
 
     @if $image-position == top {
         flex-direction: column-reverse;
+
+        .image-container{
+            left: 0;
+            right: 0;
+            top: 0;
+            height: $image-height;
+            // bottom: 100 - $image-height;
+            position: absolute;
+        }
+
+        .c-card__content {
+            padding-top: calc(#{$image-height} + #{$grid-gutter-width});
+        }
+
     }
 
     @if $image-position == bottom {
@@ -17,22 +37,41 @@
     }
 
     @if $image-position == left {
-        flex-direction: row-reverse;
+        flex-direction: row;
+        .image-container{
+            left: 0;
+            right: 100 - $image-width;
+            top: 0;
+            height: $image-height;
+            position: absolute;
+        }
+
+        .c-card__content {
+            padding-left: calc(#{$image-width} + #{$grid-gutter-width});
+        }
+    
     }
 
     @if $image-position == right {
-        flex-direction: row;
-    }
+        flex-direction: row-reverse;
+        .image-container{
+            right: 0;
+            left: 100 - $image-width;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
 
-    &--content {
-        padding: 20px;
+        .c-card__content {
+            padding-right: calc(#{$image-width} + #{$grid-gutter-width});
+        }
+    
     }
 
     img {
-        @if $image-height != 100% {
-            height: $image-height;
-            object-fit: cover;
-        }
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
    
