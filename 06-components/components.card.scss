@@ -7,5 +7,5 @@
 }
 
 .c-card__left{
-    @include card($border-radius-card, left, 100%, 25%)
+    @include card($border-radius-card, left, 100%, 15%)
 }
