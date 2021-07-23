@@ -7,6 +7,19 @@
     @include button(linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%));
 }
 
+.c-btn--small {
+    // button($background-color: $color-brand, $border-radius:$border-radius-button, $color: $button-color, $font-weight: $weight-bold, $padding: $y-padding $x-padding)
+    // $background-color, $border-radius, $color, $font-weight, $padding
+    @include button(linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%), $border-radius-button, $button-color, $weight-normal, 6px 10px);
+}
+
+.c-btn--small--layout {
+    // button($background-color: $color-brand, $border-radius:$border-radius-button, $color: $button-color, $font-weight: $weight-bold, $padding: $y-padding $x-padding)
+    // $background-color, $border-radius, $color, $font-weight, $padding
+    @include button(transparent, $border-radius-button, $button-color, $weight-normal, 6px 10px);
+    border: 1px solid rgb(207, 207, 207);
+}
+
 .c-btn-a {
     // $background-color, $border-radius, $color, $font-weight, $padding
     @include button(linear-gradient(to right, #09a061 0%, #fda085 51%, #f6d365 100%));

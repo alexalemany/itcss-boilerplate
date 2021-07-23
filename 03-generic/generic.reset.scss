@@ -21,6 +21,10 @@ li > {
     }
 }
 
+ul{
+    list-style-type: none;
+}
+
 // Remove the gap between audio, canvas, iframes, images, videos and the bottom
 // of their containers: https://github.com/h5bp/html5-boilerplate/issues/440
 audio,

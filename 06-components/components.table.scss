@@ -1,0 +1,24 @@
+// ----------------------------------------
+// TABLES
+// ----------------------------------------
+
+// Table
+.c-table {
+    width: 100%;
+    
+    th{
+        text-align: left;
+        border-bottom: 1px solid $border-color-table;
+        padding: $padding-th-y $padding-th-x;
+    }
+
+    td{
+        border-bottom: 1px solid $border-color-table;
+        padding: $padding-td-y $padding-td-x;
+    }
+
+    &--bordered{
+        border: 1px solid $border-color-table;
+    }
+
+}

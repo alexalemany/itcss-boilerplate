@@ -3,15 +3,10 @@
 // ----------------------------------------
 
 .o-container{
-    width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin: auto;
+    @include make-container($grid-gutter-width);
 
     @media (min-width: $bp-sm) {
         width: $cnt-sm;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 
     @media (min-width: $bp-md) {

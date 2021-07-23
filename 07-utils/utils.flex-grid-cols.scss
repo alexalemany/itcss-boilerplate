@@ -1,15 +1,48 @@
 // CLASSES
 .u-flex-grid {
-    @include grid-base();
+    @include make-row();
 }
 
 .u-flex-col {
-    @include col-props(6, 12, 15px);
-//   @include columns-loop(desk, $grid-desktop-columns, $desk-gutter);
-//   @media screen and (max-width: $bp-md) {
-//     @include columns-loop(tab, $grid-tablet-columns, $tab-gutter);
-//   }
-//   @media screen and (max-width: $bp-sm) {
-//     @include columns-loop(mob, $grid-mobile-columns, $mob-gutter);
-//   }
+    @include make-col(6, 12);
+}
+
+.u-flex-col-1 {
+    @include make-col(1, 10);
+}
+
+.u-flex-col-2 {
+    @include make-col(2, 10);
+}
+
+.u-flex-col-3 {
+    @include make-col(3, 10);
+}
+
+.u-flex-col-4 {
+    @include make-col(4, 10);
+}
+
+.u-flex-col-5 {
+    @include make-col(5, 10);
+}
+
+.u-flex-col-6 {
+    @include make-col(6, 10);
+}
+
+.u-flex-col-7 {
+    @include make-col(7, 10);
+}
+
+.u-flex-col-8 {
+    @include make-col(8, 10);
+}
+
+.u-flex-col-9 {
+    @include make-col(9, 10);
+}
+
+.u-flex-col-10 {
+    @include make-col(10, 10);
 }

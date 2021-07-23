@@ -9,21 +9,23 @@ $brand-color:                    #1ACDC2;
 $brand-color-secondary:          #FF00E5;
 
 // Font
+$font-size-base:                 16px;
 $brand-font:                     -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 $brand-font-secondary:           Georgia, serif;
 
 // BASE ------------------------------------
 
-// Color
-$base-font-size:                 1rem;
-$base-line-height:               1.2;
-
 // Border
 $base-border-width:              0.125em;
 $base-border-radius:             0.125em;
 
+// Border radius elements
+$border-radius-card: 0.125em * 1.5;
+$border-radius-button: 0.125em * 1.5;
+
 // Shadows
 $base-box-shadow:                0 0 1em rgba(34, 34, 34, 0.125);
+
 $base-box-shadow-inset:          0 0 0.25em rgba(34, 34, 34, 0.125) inset;
 $base-box-shadow-error:          0 0 0.5em rgba(255, 65, 54, 0.25);
 $base-box-shadow-highlight:      0 0 0.5em rgba(0, 169, 151, 0.25);
@@ -34,5 +36,13 @@ $grid-gutter-width:           1.5rem !default;
 $grid-row-columns:            6 !default;
 
 // Padding buttons
-$y-padding:                   12px;
-$x-padding:                   12px;
+$y-padding: 1rem;
+$x-padding: 1.5rem;
+
+// Tables
+$border-color-table: #d6d6d6;
+$padding-th-y: 0.7rem;
+$padding-th-x: 1rem;
+
+$padding-td-y: 0.7rem;
+$padding-td-x: 1rem;
