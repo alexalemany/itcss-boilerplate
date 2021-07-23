@@ -4,6 +4,16 @@
 
 .c-btn {
     // $background-color, $border-radius, $color, $font-weight, $padding
+    @include button($color-brand);
+}
+
+.c-btn-secondary {
+    // $background-color, $border-radius, $color, $font-weight, $padding
+    @include button($color-brand-secondary);
+}
+
+.c-btn-gradient {
+    // $background-color, $border-radius, $color, $font-weight, $padding
     @include button(linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%));
 }
 

@@ -2,7 +2,7 @@
 // GRID FLEXBOX
 // ----------------------------------------
 
-@mixin make-col($column-with, $columns, $gutter: $grid-gutter-width) {
+@mixin make-col($column-with: $grid-row-columns, $columns:$grid-columns, $gutter: $grid-gutter-width) {
     box-sizing: border-box;
     flex: 0 0 percentage($column-with / $columns);
 
