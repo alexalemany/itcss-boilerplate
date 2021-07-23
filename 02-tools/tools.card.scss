@@ -17,7 +17,7 @@
     @if $image-position == top {
         flex-direction: column-reverse;
 
-        .image-container{
+        .c-card__image-container{
             left: 0;
             right: 0;
             top: 0;
@@ -38,7 +38,7 @@
 
     @if $image-position == left {
         flex-direction: row;
-        .image-container{
+        .c-card__image-container{
             left: 0;
             right: 100 - $image-width;
             top: 0;
@@ -54,7 +54,7 @@
 
     @if $image-position == right {
         flex-direction: row-reverse;
-        .image-container{
+        .c-card__image-container{
             right: 0;
             left: 100 - $image-width;
             top: 0;
