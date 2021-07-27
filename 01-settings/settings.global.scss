@@ -3,12 +3,12 @@
 // ----------------------------------------
 
 // COLORS
-$color-brand:                 #fca22d;
+$color-brand:                 #ffb843;
 $color-brand-secondary:       #1ACDC2;
 
 // Derivates
 $color-brand-dark:            darken($color-brand, 10%);
-$color-brand-light:           lighten($brand-color, 10%);
+$color-brand-light:           lighten($color-brand, 10%);
 
 $color-brand-secondary-dark:  darken($color-brand-secondary, 5%);
 $color-brand-secondary-light: lighten($color-brand-secondary, 5%);
@@ -33,17 +33,17 @@ $color-information-dark:      darken($color-information, 5%);
 $color-information-light:     lighten($color-information, 20%);
 
 
-$color-link:                   $color-brand;
+$color-link:                  $color-brand;
 $color-text-button:           #333;
 
 $color-background:            white;
-$color-text-body:             #333;
+$color-text-body:             #d3d3d3;
 
 
 // TYPOGRAPHY
 $font-size-base:              16px;
 $font-brand:                  -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-$font-global:                 Georgia, serif;
+$font-global:                 -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 
 // Size
 $font-size-h1:                2rem;     /* 32 / 16 */
@@ -92,16 +92,16 @@ $margin-paragraph:            0 0 .5rem 0;
 // RESPONSIVE
 
 // Breakpoints
-$bp-xs: 0;
-$bp-sm: 576px;
-$bp-md: 768px;
-$bp-lg: 992px;
-$bp-xl: 1200px;
-$bp-xxl: 1400px;
+$bp-xs:                       0;
+$bp-sm:                       576px;
+$bp-md:                       768px;
+$bp-lg:                       992px;
+$bp-xl:                       1200px;
+$bp-xxl:                      1400px;
 
 // Container
-$cnt-sm: 540px;
-$cnt-md: 720px;
-$cnt-lg: 960px;
-$cnt-xl: 1140px;
-$cnt-xxl: 1320px;
+$cnt-sm:                      540px;
+$cnt-md:                      720px;
+$cnt-lg:                      960px;
+$cnt-xl:                      1140px;
+$cnt-xxl:                     1320px;
