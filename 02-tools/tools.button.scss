@@ -3,11 +3,12 @@
 // ----------------------------------------
 
 
-@mixin button($background-color: $color-brand, $border-radius:$border-radius-button, $color: $button-color, $font-weight: $weight-bold, $padding: $y-padding $x-padding) {
+@mixin button($background-color: $color-brand, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding: $padding-buttons) {
     display: block;
     transition: 0.5s;
     background-size: 200% auto;
     background-image: $background-color;
+    background-color: $background-color;
     // border: $base-border-width-small solid $color-brand-secondary-light;
     border: 0;
     border-radius: $border-radius;
@@ -22,17 +23,19 @@
     padding: $padding;
     text-align: center;
     text-decoration: none;
-    transition: background-position 0.25s, box-shadow 0.25s, transform 0.25s;
+    transition: background-position, background-color 0.25s, box-shadow 0.25s, transform 0.25s;
     vertical-align: middle;
     white-space: nowrap;
   
     &:focus,
     &:hover {
-        // background-image: darken($background-color, 10%);;
+        background-image: darken(red, 10%);
+        background-color: darken(red, 10%);
         background-position: right center;
         // opacity: .6;
+
         box-shadow: $base-box-shadow;
-        color: $button-color;
+        color: $color;
         outline: 0;
     }
 }
