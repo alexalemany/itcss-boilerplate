@@ -3,14 +3,15 @@
 // ----------------------------------------
 
 a {
-    color: $color-brand;
+    color: $color-link;
     text-decoration: none;
-    transition: color 0.25s;
+    transition: opacity 0.25s;
+    opacity: 1;
     cursor: pointer;
   
     &:active,
     &:focus,
     &:hover {
-      color: $color-brand-dark;
+      opacity: .6;
     }
 }

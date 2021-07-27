@@ -3,11 +3,10 @@
 // ----------------------------------------
 
 
-@mixin button($background-color: $color-brand,$background-color-dark: $color-brand-dark, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding: $padding-buttons) {
+@mixin button($background-color: $color-brand, $background-color-dark: $color-brand-dark, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding: $padding-buttons) {
     display: block;
     transition: 0.5s;
     background-size: 200% auto;
-    background-image: $background-color;
     background-color: $background-color;
     // border: $base-border-width-small solid $color-brand-secondary-light;
     border: 0;
@@ -23,13 +22,12 @@
     padding: $padding;
     text-align: center;
     text-decoration: none;
-    transition: background-position, background-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    transition: background-position 0.25s, box-shadow 0.25s, transform 0.25s;
     vertical-align: middle;
     white-space: nowrap;
   
     &:focus,
     &:hover {
-        background-image: $background-color-dark;
         background-color: $background-color-dark;
         background-position: right center;
         // opacity: .6;
@@ -39,3 +37,38 @@
         outline: 0;
     }
 }
+
+@mixin buttonGradient($background-color: $color-brand, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding: $padding-buttons) {
+    display: block;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: $background-color;
+    border: 0;
+    border-radius: $border-radius;
+    color: $color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: $font-weight;
+    line-height: $base-line-height;
+    margin: 0;
+    padding: $padding;
+    text-align: center;
+    text-decoration: none;
+    transition: background-position 0.25s, box-shadow 0.25s, transform 0.25s;
+    vertical-align: middle;
+    white-space: nowrap;
+  
+    &:focus,
+    &:hover {
+        background-image: $background-color;
+        background-position: right center;
+        // opacity: .6;
+
+        box-shadow: $base-box-shadow;
+        color: $color;
+        outline: 0;
+    }
+}
+
