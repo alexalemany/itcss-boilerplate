@@ -10,8 +10,7 @@ a {
     cursor: pointer;
   
     &:active,
-    &:focus,
     &:hover {
-      opacity: .6;
+    //   opacity: .6;
     }
 }

@@ -12,10 +12,10 @@
     @include button($color-brand-secondary);
 }
 
-.c-btn-gradient {
-    // $background-color, $border-radius, $color, $font-weight, $padding
-    @include button(linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%));
-}
+// .c-btn-gradient {
+//     // $background-color, $border-radius, $color, $font-weight, $padding
+//     @include button(linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%));
+// }
 
 .c-btn--small {
     // button($background-color: $color-brand, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding:  $padding-buttons)
@@ -26,8 +26,8 @@
 .c-btn--small--layout {
     // button($background-color: $color-brand, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding: $padding-buttons)
     // $background-color, $border-radius, $color, $font-weight, $padding
-    @include button(transparent, $border-radius-button, $color-text-button, $weight-normal, 6px 10px);
-    border: 1px solid rgb(207, 207, 207);
+    @include button(transparent, transparent, $border-radius-button, $color-text-button, $weight-normal, 6px 10px);
+    border: 1px solid $color-text-button;
 }
 
 .c-btn-a {

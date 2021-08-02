@@ -26,7 +26,7 @@
     vertical-align: middle;
     white-space: nowrap;
   
-    &:focus,
+    &:active,
     &:hover {
         background-color: $background-color-dark;
         background-position: right center;
@@ -40,7 +40,6 @@
 
 @mixin buttonGradient($background-color: $color-brand, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding: $padding-buttons) {
     display: block;
-    transition: 0.5s;
     background-size: 200% auto;
     background-image: $background-color;
     border: 0;
@@ -60,7 +59,7 @@
     vertical-align: middle;
     white-space: nowrap;
   
-    &:focus,
+    &:active,
     &:hover {
         background-image: $background-color;
         background-position: right center;
