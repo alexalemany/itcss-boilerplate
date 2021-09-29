@@ -2,71 +2,84 @@
 // BUTTONS
 // ----------------------------------------
 
+@mixin button(
+  $background-color: $color-brand,
+  $background-color-dark: $color-brand-dark,
+  $border-radius: $border-radius-button,
+  $color: $color-text-button,
+  $font-weight: $weight-bold,
+  $padding: $padding-buttons
+) {
+  display: block;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-color: $background-color;
+  border: 1px solid $background-color;
+  border-radius: $border-radius;
+  color: $color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: $font-weight;
+  line-height: $base-line-height;
+  margin: 0;
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s;
+  vertical-align: middle;
+  white-space: nowrap;
+  transition: all 0.5s ease;
 
-@mixin button($background-color: $color-brand, $background-color-dark: $color-brand-dark, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding: $padding-buttons) {
-    display: block;
-    transition: 0.5s;
-    background-size: 200% auto;
-    background-color: $background-color;
+  &:active,
+  &:hover {
+    background-color: $background-color-dark;
     border: 1px solid $background-color-dark;
-    border-radius: $border-radius;
-    color: $color;
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: $font-weight;
-    line-height: $base-line-height;
-    margin: 0;
-    padding: $padding;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.25s;
-    vertical-align: middle;
-    white-space: nowrap;
-  
-    &:active,
-    &:hover {
-        background-color: $background-color-dark;
-        background-position: right center;
-        // opacity: .6;
+    background-position: right center;
+    // opacity: .6;
 
-        box-shadow: $base-box-shadow;
-        color: $color;
-        outline: 0;
-    }
+    box-shadow: $base-box-shadow;
+    color: $color;
+    outline: 0;
+  }
 }
 
-@mixin buttonGradient($background-color: $color-brand, $border-radius:$border-radius-button, $color: $color-text-button, $font-weight: $weight-bold, $padding: $padding-buttons) {
-    display: block;
-    background-size: 200% auto;
+@mixin buttonGradient(
+  $background-color: $color-brand,
+  $border-radius: $border-radius-button,
+  $color: $color-text-button,
+  $font-weight: $weight-bold,
+  $padding: $padding-buttons
+) {
+  display: block;
+  background-size: 200% auto;
+  background-image: $background-color;
+  border: 0;
+  border-radius: $border-radius;
+  color: $color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: $font-weight;
+  line-height: $base-line-height;
+  margin: 0;
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  transition: background-position 0.25s, box-shadow 0.25s, transform 0.25s;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:active,
+  &:hover {
     background-image: $background-color;
-    border: 0;
-    border-radius: $border-radius;
+    background-position: right center;
+    // opacity: .6;
+
+    box-shadow: $base-box-shadow;
     color: $color;
-    cursor: pointer;
-    display: inline-block;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: $font-weight;
-    line-height: $base-line-height;
-    margin: 0;
-    padding: $padding;
-    text-align: center;
-    text-decoration: none;
-    transition: background-position 0.25s, box-shadow 0.25s, transform 0.25s;
-    vertical-align: middle;
-    white-space: nowrap;
-  
-    &:active,
-    &:hover {
-        background-image: $background-color;
-        background-position: right center;
-        // opacity: .6;
-
-        box-shadow: $base-box-shadow;
-        color: $color;
-        outline: 0;
-    }
+    outline: 0;
+  }
 }
-

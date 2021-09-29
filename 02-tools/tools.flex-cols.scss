@@ -1,7 +1,7 @@
 // ----------------------------------------
 // GRID FLEXBOX
 // ----------------------------------------
-
+@use "sass:math";
 @mixin make-col(
   $column-with: $grid-row-columns,
   $columns: $grid-columns,
@@ -19,6 +19,6 @@
 @mixin make-row($gutter: $grid-gutter-width) {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -math.div(-$gutter, 2);
-  margin-left: -math.div(-$gutter, 2);
+  margin-right: math.div(-$gutter, 2);
+  margin-left: math.div(-$gutter, 2);
 }
